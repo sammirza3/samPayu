@@ -1,0 +1,26 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+---------------------------SAM MIRZA-------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Requirements : python-Django version > 1.7
+If you have production key and salt then replace it in bank/views.py
+If you want to use to test mode then replace "https://secure.payu.in/_payment"
+with "https://test.payu.in/_payment" in bank/views.py file and also remove line
+number 59-61(so that you can remove service provider attribute which is not required in test mode)
+in bank/templates/current_datetime.html 
+
+
+Instructions to use this app.
+Run the following commands:
+1) python3 manage.py makemigrations
+2) python3 manage.py migrate
+3) python3 manage.py runserver
+
+then open your browser and visit 127.0.0.1:8000/home/
+
+then fill all fields an while filling amount it should be float ex: 200.0
+then submit it.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------THANK YUO!-------------------------------------
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
